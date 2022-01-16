@@ -40,8 +40,4 @@ moving on
 
 3 - Run the command "npm run start". This will start the server
 
-4 - Go to the link "http://localhost:3000/". This will bring you to the
-home page of the assignment.
-
-5 - From the home page you can navigate and use the whole website without
-needing to do anything externally.
+4 - Go to the link "http://localhost:3000/"
