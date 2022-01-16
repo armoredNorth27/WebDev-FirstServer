@@ -1,0 +1,60 @@
+#body{
+    background-color: rgb(228, 228, 228);
+}
+
+#titleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    color: midnightblue;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+/* Set the CSS for the links */
+#linkDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.link:link{
+    color: rgb(80, 41, 223);
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: rgb(80, 41, 223);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: rgb(87, 88, 88);
+    text-decoration: none;
+}
+
+.link:active{
+    color: rgb(48, 49, 49);
+    text-decoration: none;
+}
+
+/* Set the CSS for each restaurant's data */
+#allStats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singleStatTitle{
+    font-family: 'Source Serif Pro', serif;
+}
+
+.singleStatInfo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "a2",
+  "version": "1.0.0",
+  "description": "Used to complete a2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "nodemonStart": "nodemon server.js"
+  },
+  "author": "Alex Nedev",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

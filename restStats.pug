@@ -1,0 +1,38 @@
+html 
+    head 
+        title Restaurant Statistics
+        link(rel='stylesheet', href='/restStats.css')
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet")
+        link(rel="shortcut icon" type="image/x-icon" href="/favicon.ico")
+
+    body#body
+        div#linkDiv
+            a.link(href='/home') Home
+
+            a.link(href='/orderform') Order Form
+
+            a.link(href='/restaurantStats') Restaurant Statistics
+
+        div#titleDiv 
+            h1#title Restaurant Statistics
+            br
+
+        div#allStats
+
+            each order in orders
+                div.singleStat
+                    h2.singleStatTitle #{order.name}:
+
+                    p.singleStatInfo Total Number of orders in the restaurant: #{order.totalNumOrders}
+
+                    if order.orderTotal == 0
+                        p.singleStatInfo Average total order: $#{(order.orderTotal).toFixed(2)}
+                    else
+                        p.singleStatInfo Average total order: $#{(order.orderTotal/order.totalNumOrders).toFixed(2)}
+                    
+                    if order.mostPopularItem == ''
+                        p.singleStatInfo Most popular item: N/A
+                    else
+                        p.singleStatInfo Most popular item: #{order.mostPopularItem}
+                

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Order Form</title>
+		<style>
+			.column {
+				float: left;
+			}
+
+			.left{
+				width: 10%;
+			}
+			
+			.right {
+				width: 25%;
+			}
+
+			.middle {
+				width: 65%;
+			}
+		</style>
+		<link rel="stylesheet" href="/orderform.css">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	</head>
+	
+	<body id="body" onload="init()">
+		<div id="linkDiv">
+			<a class="link" href='/home'>Home</a>
+			<a class="link" href='/orderform'>Order Form</a>
+			<a class="link" href='/restaurantStats'>Restaurant Statistics</a>
+		</div>
+		<br><br>
+		<select id="restaurant-select"></select>
+		<br><br>
+		<div id="info"></div>
+		<div id="main">
+			<div class="column left" id="left"></div>
+			<div class="column middle" id="middle"></div>
+			<div class="column right" id="right"></div>
+		</div>
+	
+		<script src="client.js"></script>
+	</body>
+
+</html>
